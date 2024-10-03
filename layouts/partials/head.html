@@ -35,6 +35,9 @@
 {{- if site.Params.analytics.naver.SiteVerificationTag }}
 <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
+{{- if site.Params.analytics.umami.SiteVerificationTag }}
+<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ site.Params.analytics.umami.SiteVerificationTag }}"></script>
+{{- end }}
 
 {{- /* Styles */}}
 
